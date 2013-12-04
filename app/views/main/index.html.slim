@@ -1,2 +1,7 @@
-h1 Main#index
-p Find me in app/views/main/index.html.slim
+.box
+  .images
+    - @images.each do |image|
+      .image
+        = image_tag 'image.jpg', width: 100
+        .title
+          = image.title
