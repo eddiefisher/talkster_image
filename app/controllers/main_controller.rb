@@ -1,6 +1,6 @@
 class MainController < ApplicationController
   def index
-    @images = Image.all
+    @categories = ImageCategory.includes(:images)
   end
 
   def show

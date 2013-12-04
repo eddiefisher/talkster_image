@@ -1,5 +1,18 @@
 .box
   margin-bottom: 10px
+.clear
+  clear: both
+  display: block
+  overflow: hidden
+  visibility: hidden
+  width: 0
+  height: 0
+
+a
+  color: #3b5c97
+a:hover, a:active, a:visited
+  color: #3b5c97
+  text-decoration:none
 
 // button colors
 .button
@@ -22,8 +35,26 @@
   @extend %button_color_dark_gray
   @extend %button_size_normal
 
+menu
+  li
+    list-style: none
+    display: inline-block
+    &:after
+      padding: 0 5px
+      content: "|"
+    &:last-child:after
+      content: ""
+
+h4.title
+  border-bottom: 1px solid lightgray
+
 .images
   .image
     text-align: center
     float: left
     width: 25%
+    img
+      border: 1px solid lightgray
+      padding: 4px
+      background-color: white
+      border-radius: 2px

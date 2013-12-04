@@ -1,7 +1,19 @@
 .box
-  .images
-    - @images.each do |image|
-      .image
-        = image_tag 'image.jpg', width: 100
-        .title
-          = image.title
+  .categories
+    h3 Category
+    menu
+      - @categories.each do |category|
+        li
+          = link_to category.title.capitalize, '#'
+  - @categories.each do |category|
+    h4.title = category.title.capitalize
+    .images id="#{category.id}"
+      - category.images.each do |image|
+        .image
+          = image_tag 'image.jpg', width: 100
+          .title
+            = image.title.capitalize
+          .info
+            b category:
+            = image.image_category.title.capitalize
+    .clear
