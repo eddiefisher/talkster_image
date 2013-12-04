@@ -15,16 +15,16 @@ ActiveRecord::Schema.define(version: 20131204161522) do
 
   create_table "image_categories", force: true do |t|
     t.string   "title"
-    t.boolean  "active"
+    t.boolean  "active",     default: true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "images", force: true do |t|
     t.string   "title"
-    t.text     "desciption"
+    t.text     "description"
     t.string   "url"
-    t.boolean  "active"
+    t.boolean  "active",            default: true
     t.integer  "image_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
