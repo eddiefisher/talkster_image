@@ -14,6 +14,9 @@ gem 'jbuilder', '~> 1.2'
 gem 'slim'
 gem 'font-awesome-rails'
 gem 'neat'
+gem 'devise'
+gem 'ransack'
+gem 'acts_as_votable', '~> 0.8.0'
 
 group :development do
   gem 'quiet_assets'
