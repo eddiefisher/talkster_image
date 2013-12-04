@@ -1,0 +1,17 @@
+form
+  #{$all-text-inputs}, textarea, select[multiple="multiple"]
+    border: 1px solid #c9d0d6
+    border-radius: 3px
+    font-size: 1em
+    outline: none
+    padding: 3px 3px 5px
+    margin-bottom: 5px
+
+  #{$all-text-inputs-focus}, textarea:focus, select[multiple="multiple"]:focus
+    border: 1px solid #99a2aa
+    box-shadow: 0 0 4px #99a2aa
+    @include transition(border, linear, 0.2s)
+    @include transition(box-shadow, linear, 0.2s)
+
+  select[multiple="multiple"]
+    min-width: 200px
