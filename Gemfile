@@ -17,4 +17,13 @@ gem 'neat'
 
 group :development do
   gem 'quiet_assets'
+  gem 'faker'
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'rspec'
+  gem 'rspec-rails'
+
+  gem 'database_cleaner'
 end
