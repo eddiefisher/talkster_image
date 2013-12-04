@@ -11,7 +11,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
-gem 'haml'
+gem 'slim'
 gem 'font-awesome-rails'
 gem 'neat'
 
